@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
 body {
   margin: 0;
-  padding: 2rem;
-  font-size: 16px;
-  font-family: 'Noto Sans JP', sans-serif;
+  padding: 2rem 5vw;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #17254a;
   height: 100vh;
   box-sizing: border-box;
 }
 
 .content {
-  max-width: 54rem;
+  max-width: 45rem;
   height: 100%;
   border: 1px dotted green;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 main {
@@ -27,11 +26,61 @@ main > *:first-child {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5.55rem;
+}
+
+h2 {
+  font-size: 1.53rem;
 }
 
 button {
+  margin-top: 2rem;
+  appearance: none;
+  border: none;
+  background-color: #cfe6ed;
+  width: 11.5rem;
+  height: 3.28rem;
   text-transform: uppercase;
   display: block;
-  margin: auto;
+  font-family: inherit;
+  font-size: 0.91rem;
+  box-shadow: 3px 3px #0a82854d;
+}
+
+.img-main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+nav {
+  border: 1px dotted blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+}
+
+nav > img {
+  height: 2.3rem;
+}
+
+nav > a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+}
+
+.support > p {
+  font-size: 0.85rem;
+}
+
+.support > img {
+  height: 3rem;
 }
