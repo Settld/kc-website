@@ -20,8 +20,6 @@ body {
 }
 
 main {
-  background-color: #fffb;
-  backdrop-filter: blur(3px);
   margin-right: 2rem;
 }
 
@@ -32,6 +30,7 @@ main > *:first-child {
 h1 {
   font-size: 5.55rem;
   margin-bottom: 2rem;
+  line-height: 100%;
 }
 
 h2 {
@@ -59,15 +58,17 @@ button {
   text-transform: uppercase;
   display: block;
   font-family: inherit;
-  font-size: 0.91rem;
+  font-size: 1rem;
+  font-weight: bold;
   box-shadow: 3px 3px #0a82854d;
+  border-radius: 1000px;
 }
 
 .img-main {
   position: absolute;
-  right: -9.2%;
-  top: -25%;
-  height: calc(100vh + 37%);
+  right: 0;
+  top: 0;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -100,6 +101,7 @@ nav > p {
 .support {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .support > p {
@@ -112,4 +114,74 @@ nav > p {
 
 .support > img:nth-of-type(2n) {
   transform: scale(0.8);
+}
+
+#life::after {
+  content: '\A';
+  white-space: pre;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 0;
+    height: initial;
+    width: 100vw;
+  }
+
+  .content {
+    margin: 0;
+    padding: 5vw;
+    position: relative;
+    margin: auto;
+  }
+
+  .img-main {
+    width: 100vw;
+    height: initial;
+  }
+
+  nav {
+    margin-top: 40vw;
+    position: absolute;
+  }
+
+  nav > p {
+    font-size: min(18vmin, 7rem);
+  }
+
+  nav > *:not(:first-child) {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+    margin-top: 100vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  button {
+    margin: 7vmin auto;
+  }
+
+  #life::after {
+    content: none;
+  }
+
+  .support {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img[alt~='uk'] {
+    height: initial;
+    width: 70%;
+  }
 }
