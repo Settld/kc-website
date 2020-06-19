@@ -22,7 +22,7 @@ body {
 main {
   background-color: #fffb;
   backdrop-filter: blur(3px);
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 main > *:first-child {
@@ -35,12 +35,18 @@ h1 {
 }
 
 h2 {
-  font-size: 1.53rem;
+  font-size: 1.7rem;
   margin-top: 0;
 }
 
 p:nth-of-type(2n) {
   margin-top: 2.5rem;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
 }
 
 button {
@@ -59,9 +65,9 @@ button {
 
 .img-main {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
+  right: -9.2%;
+  top: -25%;
+  height: calc(100vh + 37%);
   z-index: -1;
 }
 
@@ -72,6 +78,10 @@ nav {
   width: 80%;
 }
 
+nav > * {
+  margin: 0;
+}
+
 nav > img {
   height: 2.3rem;
 }
@@ -79,6 +89,12 @@ nav > img {
 nav > a {
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+nav > p {
+  font-family: TisaSansPro-Bold, Tisa Sans Pro;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .support {
