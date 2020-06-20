@@ -113,13 +113,19 @@ main > button {
     align-items: center;
   }
 
+  .support p {
+    text-align: left;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
   .support > * {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
   }
 
   img[alt~='uk'] {
     height: initial;
-    width: 25%;
+    width: 10rem;
     margin-top: -1rem;
   }
 }
