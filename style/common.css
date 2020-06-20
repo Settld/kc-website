@@ -29,8 +29,8 @@ body {
 .content > nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  width: 80%;
+  align-items: center;
+  width: 70%;
 }
 
 nav > * {
@@ -53,9 +53,10 @@ main > p {
 }
 
 nav > *:first-child {
-  font-family: TisaSansPro-Bold, Tisa Sans Pro;
+  font-family: sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  text-transform: initial;
 }
 
 .mobile-nav {
