@@ -87,7 +87,7 @@ main > button {
 
   main {
     margin: 0;
-    margin-top: 100vw;
+    margin-top: 93vw;
   }
 
   h1 {
@@ -101,7 +101,7 @@ main > button {
 
   main > button {
     margin: 7vmin auto;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 
   #life::after {
