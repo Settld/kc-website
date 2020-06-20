@@ -15,6 +15,7 @@ p:nth-of-type(2n) {
 
 main {
   margin-right: 2rem;
+  margin-top: 5vh;
 }
 
 main > *:first-child {
@@ -28,7 +29,7 @@ main a {
 }
 
 main > button {
-  margin-top: 2rem;
+  margin-top: 3rem;
   appearance: none;
   border: none;
   background-color: var(--cl-accent);
@@ -39,7 +40,7 @@ main > button {
   font-family: inherit;
   font-size: 1rem;
   font-weight: bold;
-  box-shadow: 3px 3px #0a82854d;
+  box-shadow: 1px 1px 3px #0a82854d;
   border-radius: 1000px;
 }
 
@@ -69,6 +70,10 @@ main > button {
   transform: scale(0.8);
 }
 
+.support > img[alt~='europe'] {
+  transform: scale(1.6);
+}
+
 #life::after {
   content: '\A';
   white-space: pre;
@@ -94,8 +99,9 @@ main > button {
     text-align: center;
   }
 
-  button {
+  main > button {
     margin: 7vmin auto;
+    margin-top: 6rem;
   }
 
   #life::after {
@@ -107,9 +113,14 @@ main > button {
     align-items: center;
   }
 
+  .support > * {
+    margin-bottom: 2.5rem;
+  }
+
   img[alt~='uk'] {
     height: initial;
-    width: 70%;
+    width: 25%;
+    margin-top: -1rem;
   }
 }
 

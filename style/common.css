@@ -42,11 +42,12 @@ nav > a {
   font-size: 1.2rem;
   text-decoration: none;
   color: inherit;
-  /* text legibility on illustration */
+  font-weight: bold;
 }
 
 nav > a,
 main > p {
+  /* text legibility on illustration */
   text-shadow: 0 0 1rem #fff;
   backdrop-filter: blur(2px);
 }
