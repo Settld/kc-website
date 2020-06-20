@@ -28,20 +28,18 @@ main a {
   color: inherit;
 }
 
-main > button {
+.cta {
+  display: block;
   margin-top: 3rem;
-  appearance: none;
-  border: none;
   background-color: var(--cl-accent);
   width: 11.5rem;
   height: 3.28rem;
   text-transform: uppercase;
-  display: block;
-  font-family: inherit;
-  font-size: 1rem;
   font-weight: bold;
   box-shadow: 1px 1px 3px #0a82854d;
   border-radius: 1000px;
+  line-height: 3.28rem;
+  text-align: center;
 }
 
 .img-main {
@@ -99,7 +97,7 @@ main > button {
     text-align: center;
   }
 
-  main > button {
+  .cta {
     margin: 7vmin auto;
     margin-top: 3rem;
   }
