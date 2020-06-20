@@ -74,7 +74,7 @@ main > button {
   white-space: pre;
 }
 
-@media (max-width: 1200px) {
+@media (orientation: portrait) {
   .img-main {
     width: 100vw;
     height: initial;
@@ -110,5 +110,12 @@ main > button {
   img[alt~='uk'] {
     height: initial;
     width: 70%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1240px) {
+  .img-main {
+    position: fixed;
+    margin-right: calc(100vw - 1240px);
   }
 }
