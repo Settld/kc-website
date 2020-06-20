@@ -45,18 +45,14 @@ nav > a {
   font-weight: bold;
 }
 
-nav > a,
-main > p {
+nav > a:not(:first-child) {
   /* text legibility on illustration */
   text-shadow: 0 0 1rem #fff;
   backdrop-filter: blur(2px);
 }
 
-nav > *:first-child {
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 3.5rem;
-  text-transform: initial;
+nav > a:first-child {
+  display: contents;
 }
 
 .mobile-nav {
@@ -106,10 +102,11 @@ body[data-expanded='true'] .mobile-nav::before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   opacity: 0;
 }
 
-.mobile-nav > nav > * {
+.mobile-nav > nav * {
   margin-bottom: 4rem;
 }
 
