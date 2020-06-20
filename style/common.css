@@ -1,11 +1,16 @@
+:root {
+  --cl-text: #17254a;
+  --cl-accent: #cfe6ed;
+}
+
 body {
   margin: 0;
   padding-top: 2rem;
   font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #17254a;
   height: 100vh;
   box-sizing: border-box;
+  color: var(--cl-text);
 }
 
 .content {
@@ -17,9 +22,10 @@ body {
   margin-left: 5vw;
   padding: 2rem 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-nav {
+.content > nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -30,16 +36,12 @@ nav > * {
   margin: 0;
 }
 
-nav > img {
-  height: 2.3rem;
-}
-
 nav > a {
   text-transform: uppercase;
   font-size: 1.2rem;
   text-decoration: none;
   color: inherit;
-  /* readability on illustration intersect */
+  /* text legibility on illustration */
   text-shadow: 0 0 1rem #fff;
   backdrop-filter: blur(2px);
 }
@@ -48,6 +50,115 @@ nav > *:first-child {
   font-family: TisaSansPro-Bold, Tisa Sans Pro;
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+  left: 5vw;
+  top: 20vw;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--cl-accent);
+  box-shadow: 2.5px 2.5px 5px #cfe6ed88;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.mobile-nav::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+body[data-expanded='true'] {
+  overflow: hidden;
+}
+
+body[data-expanded='true'] .mobile-nav::before {
+  transform: scale(50);
+}
+
+.mobile-nav > nav {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cl-accent);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 6vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.mobile-nav > nav > * {
+  margin-bottom: 4rem;
+}
+
+body[data-expanded='true'] .mobile-nav > nav {
+  visibility: visible;
+  transition: opacity 0.2s ease 0.2s;
+  opacity: 1;
+}
+
+.mobile-nav > button {
+  position: absolute;
+  display: block;
+  background-color: transparent;
+  width: 50%;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: none;
+  background-color: var(--cl-text);
+  --line-width: 2px;
+  height: var(--line-width);
+  border-radius: calc(var(--line-width) / 2);
+}
+
+.mobile-nav > button::before,
+.mobile-nav > button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: var(--cl-text);
+  top: 0;
+  transform: translateY(-0.35rem);
+  height: var(--line-width);
+  border-radius: calc(var(--line-width) / 2);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.mobile-nav > button::after {
+  transform: translateY(0.35rem);
+}
+
+body[data-expanded='true'] .mobile-nav > button {
+  background-color: transparent;
+}
+body[data-expanded='true'] .mobile-nav > button::before {
+  transform: rotate(45deg) translateX(15%) translateY(-0.2rem);
+}
+[data-expanded='true'] .mobile-nav > button::after {
+  transform: rotate(-45deg) translateX(15%) translateY(0.2rem);
+}
+
+button:focus {
+  outline: none;
 }
 
 @media (max-width: 1200px) {
@@ -64,16 +175,20 @@ nav > *:first-child {
     margin: auto;
   }
 
-  nav {
+  .content > nav {
     margin-top: 40vw;
     position: absolute;
   }
 
-  nav > p {
+  .content > nav > p {
     font-size: min(18vmin, 7rem);
   }
 
-  nav > *:not(:first-child) {
+  .content > nav > *:not(:first-child) {
     display: none;
+  }
+
+  .mobile-nav {
+    display: block;
   }
 }

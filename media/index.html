@@ -10,7 +10,21 @@
     />
     <link rel="stylesheet" href="/style/common.css" />
   </head>
-  <body>
+  <body data-expanded="false">
+    <script>
+      function toggleExpand() {
+        document.body.dataset.expanded =
+          document.body.dataset.expanded === 'true' ? 'false' : 'true'
+      }
+    </script>
+    <div class="mobile-nav" onclick="toggleExpand()">
+      <nav>
+        <a href="/">Settld.</a>
+        <a href="/media">media</a>
+        <a href="/contact">contact us</a>
+      </nav>
+      <button></button>
+    </div>
     <div class="content">
       <nav>
         <a href="/">Settld.</a>

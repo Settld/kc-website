@@ -27,11 +27,11 @@ main a {
   color: inherit;
 }
 
-button {
+main > button {
   margin-top: 2rem;
   appearance: none;
   border: none;
-  background-color: #cfe6ed;
+  background-color: var(--cl-accent);
   width: 11.5rem;
   height: 3.28rem;
   text-transform: uppercase;
