@@ -1,0 +1,19 @@
+.content {
+  height: auto;
+}
+
+.hbspt-form {
+  margin: auto;
+  margin-top: 15vh;
+  max-width: min(50rem, 95vw);
+}
+
+.mobile-nav {
+  top: 1rem;
+}
+
+@media (orientation: portrait) {
+  .hbspt-form {
+    margin-top: 2rem;
+  }
+}
