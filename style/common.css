@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding-top: 2rem;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #17254a;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 50rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5vw;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+}
+
+nav > * {
+  margin: 0;
+}
+
+nav > img {
+  height: 2.3rem;
+}
+
+nav > a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  /* readability on illustration intersect */
+  text-shadow: 0 0 1rem #fff;
+  backdrop-filter: blur(2px);
+}
+
+nav > *:first-child {
+  font-family: TisaSansPro-Bold, Tisa Sans Pro;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 0;
+    height: initial;
+    width: 100vw;
+  }
+
+  .content {
+    margin: 0;
+    padding: 5vw;
+    position: relative;
+    margin: auto;
+  }
+
+  nav {
+    margin-top: 40vw;
+    position: absolute;
+  }
+
+  nav > p {
+    font-size: min(18vmin, 7rem);
+  }
+
+  nav > *:not(:first-child) {
+    display: none;
+  }
+}
