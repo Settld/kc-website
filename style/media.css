@@ -1,5 +1,5 @@
 body {
-  padding: 4rem 5vw;
+  padding-left: 5vw;
   padding-bottom: 2.5vw;
   height: initial;
 }
@@ -7,6 +7,7 @@ body {
 .desktop-nav {
   width: 30rem;
   max-width: 100%;
+  margin-top: 2rem;
 }
 
 .mobile-nav {
@@ -22,6 +23,10 @@ b * {
 h2 {
   margin-top: 5rem;
   font-size: 2rem;
+}
+
+h2:first-of-type {
+  margin-top: 4rem;
 }
 
 hr + h2 {
@@ -67,6 +72,10 @@ article a {
   }
 
   img[alt~='photo'] {
+    margin-top: 0;
+  }
+
+  .desktop-nav {
     margin-top: 0;
   }
 }

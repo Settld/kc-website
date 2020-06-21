@@ -1,5 +1,5 @@
 h1 {
-  font-size: 3.55rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   line-height: 100%;
 }
@@ -142,8 +142,8 @@ main a {
 
 @media (orientation: landscape) and (max-height: 900px) {
   h1 {
-    font-size: 11vh;
-    font-size: max(11vh, 3rem);
+    font-size: 6vh;
+    font-size: max(6vh, 3rem);
   }
 
   h2 {
