@@ -155,14 +155,6 @@ main a {
     font-size: max(2vh, 0.8rem);
   }
 
-  body {
-    padding-top: 4vh;
-  }
-
-  .content {
-    padding-top: 0;
-  }
-
   .cta {
     margin-top: 2rem;
     width: 11.5rem;

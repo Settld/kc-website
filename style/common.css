@@ -204,3 +204,13 @@ hr {
     display: block;
   }
 }
+
+@media (orientation: landscape) and (max-height: 900px) {
+  body {
+    padding-top: 4vh;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+}

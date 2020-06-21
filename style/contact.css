@@ -1,12 +1,24 @@
 .content {
-  height: auto;
+  min-height: 100%;
+  margin-right: 5vw;
+  max-width: initial;
+}
+
+.desktop-nav {
+  max-width: 35rem;
+}
+
+.form-wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .hbspt-form {
-  margin: auto;
-  margin-top: 15vh;
-  max-width: 30rem;
-  max-width: min(30rem, 95vw);
+  width: 30rem;
+  max-width: 100%;
 }
 
 .hbspt-form::after {
@@ -26,5 +38,9 @@
 @media (orientation: portrait) {
   .hbspt-form {
     margin-top: 2rem;
+  }
+
+  .desktop-nav {
+    display: none;
   }
 }

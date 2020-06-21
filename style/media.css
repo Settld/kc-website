@@ -44,14 +44,6 @@ img[alt~='photo'] {
 }
 
 @media (orientation: landscape) and (max-height: 900px) {
-  body {
-    padding-top: 4vh;
-  }
-
-  .content {
-    padding-top: 0;
-  }
-
   h2 {
     margin-top: 4vh;
     margin-bottom: 4vh;
