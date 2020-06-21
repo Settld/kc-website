@@ -28,8 +28,9 @@ hr + h2 {
 }
 
 img[alt~='photo'] {
-  max-width: min(30rem, 100%);
-  margin-top: 3rem;
+  margin-top: 1rem;
+  max-width: 45vh;
+  max-width: min(45vh, 100%);
 }
 
 @media (orientation: portrait) {
@@ -39,5 +40,24 @@ img[alt~='photo'] {
 
   h2 {
     margin-top: 2rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 900px) {
+  body {
+    padding-top: 4vh;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  h2 {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  img[alt~='photo'] {
+    margin-top: 0;
   }
 }
