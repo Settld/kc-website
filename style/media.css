@@ -1,6 +1,7 @@
 body {
   padding: 4rem 5vw;
   padding-bottom: 2.5vw;
+  height: initial;
 }
 
 .desktop-nav {
@@ -28,9 +29,25 @@ hr + h2 {
 }
 
 img[alt~='photo'] {
-  margin-top: 1rem;
+  margin: 1rem 0;
   max-width: 45vh;
   max-width: min(45vh, 100%);
+}
+
+article {
+  max-width: 55ch;
+  border-top: 1px solid #17254a33;
+  border-bottom: 1px solid #17254a33;
+}
+
+article p {
+  margin: 0.7rem 0;
+}
+
+article a {
+  margin: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 @media (orientation: portrait) {
