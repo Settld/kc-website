@@ -1,5 +1,5 @@
 h1 {
-  font-size: 5.55rem;
+  font-size: 3.55rem;
   margin-bottom: 2rem;
   line-height: 100%;
 }
@@ -7,10 +7,6 @@ h1 {
 h2 {
   font-size: 1.7rem;
   margin-top: 0;
-}
-
-p:nth-of-type(2n) {
-  margin-top: 2.5rem;
 }
 
 main {
@@ -68,10 +64,6 @@ main a {
   height: 3rem;
 }
 
-.support > img:nth-of-type(2n) {
-  transform: scale(0.8);
-}
-
 .support > img[alt~='europe'] {
   transform: scale(1.6);
 }
@@ -79,6 +71,10 @@ main a {
 #life::after {
   content: '\A';
   white-space: pre;
+}
+
+img[alt~='uk']:first-of-type {
+  display: none;
 }
 
 @media (orientation: portrait) {
@@ -116,19 +112,25 @@ main a {
   }
 
   .support p {
-    text-align: left;
-    width: 100%;
     margin: 2rem 0;
   }
 
   .support > * {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   img[alt~='uk'] {
     height: initial;
     width: 10rem;
-    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+
+  img[alt~='uk']:first-of-type {
+    display: initial;
+  }
+
+  img[alt~='uk']:last-of-type {
+    display: none;
   }
 }
 

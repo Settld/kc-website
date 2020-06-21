@@ -2,6 +2,7 @@
   min-height: 100%;
   margin-right: 5vw;
   max-width: initial;
+  padding-bottom: 0;
 }
 
 .desktop-nav {
@@ -12,13 +13,17 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  margin-top: 15vh;
+  flex-grow: 1;
 }
 
 .hbspt-form {
+  display: block;
   width: 30rem;
   max-width: 100%;
+  background-color: #fff;
+  margin-top: -5rem;
 }
 
 .hbspt-form::after {
@@ -31,16 +36,39 @@
   background-color: #fff;
 }
 
+.hue {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: block;
+  transform: translateY(-220px);
+  backdrop-filter: hue-rotate(190deg) saturate(30%) brightness(130%);
+  pointer-events: none;
+}
+
+.thanks {
+  position: relative;
+  transform: translateY(100px);
+  z-index: -1;
+  margin-bottom: 5rem;
+}
+
 .mobile-nav {
   top: 1rem;
 }
 
 @media (orientation: portrait) {
-  .hbspt-form {
-    margin-top: 2rem;
+  .form-wrap {
+    margin-top: 0;
   }
 
   .desktop-nav {
     display: none;
+  }
+}
+
+@media (min-height: 850px) {
+  body {
+    overflow-y: hidden;
   }
 }

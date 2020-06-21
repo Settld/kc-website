@@ -29,7 +29,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 60%;
+}
+
+.desktop-nav img {
+  width: 138px;
+  margin-right: 25%;
 }
 
 nav > * {
