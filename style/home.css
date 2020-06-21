@@ -60,11 +60,11 @@ main a {
   font-size: 0.85rem;
 }
 
-.support > img {
+.support img {
   height: 3rem;
 }
 
-.support > img[alt~='europe'] {
+.support img[alt~='europe'] {
   transform: scale(1.6);
 }
 
@@ -73,7 +73,7 @@ main a {
   white-space: pre;
 }
 
-img[alt~='uk']:first-of-type {
+.support > a:first-of-type {
   display: none;
 }
 
@@ -115,7 +115,7 @@ img[alt~='uk']:first-of-type {
     margin: 2rem 0;
   }
 
-  .support > * {
+  .support img {
     margin-bottom: 3rem;
   }
 
@@ -125,11 +125,10 @@ img[alt~='uk']:first-of-type {
     margin-bottom: 2rem;
   }
 
-  img[alt~='uk']:first-of-type {
+  .support > a:first-of-type {
     display: initial;
   }
-
-  img[alt~='uk']:last-of-type {
+  .support > a:last-of-type {
     display: none;
   }
 }
