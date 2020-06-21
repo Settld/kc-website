@@ -193,15 +193,6 @@ hr {
   }
 
   .desktop-nav {
-    margin-top: 32vw;
-    position: absolute;
-  }
-
-  .desktop-nav > p {
-    font-size: min(18vmin, 7rem);
-  }
-
-  .desktop-nav > *:not(:first-child) {
     display: none;
   }
 

@@ -1,0 +1,14 @@
+.mobile-nav {
+  position: absolute;
+  top: 1rem;
+}
+
+.thanks {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50ch;
+  max-width: 95vw;
+  text-align: center;
+}

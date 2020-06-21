@@ -131,6 +131,20 @@ main a {
   .support > a:last-of-type {
     display: none;
   }
+
+  .desktop-nav {
+    margin-top: 32vw;
+    position: absolute;
+    display: block;
+  }
+
+  .desktop-nav > p {
+    font-size: min(18vmin, 7rem);
+  }
+
+  .desktop-nav > *:not(:first-child) {
+    display: none;
+  }
 }
 
 @media (orientation: landscape) and (max-width: 1240px) {

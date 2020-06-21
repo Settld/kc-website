@@ -1,5 +1,6 @@
 body {
   padding-left: 5vw;
+  padding-right: 5vw;
   padding-bottom: 2.5vw;
   height: initial;
 }
@@ -26,7 +27,7 @@ h2 {
 }
 
 h2:first-of-type {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 hr + h2 {
@@ -37,6 +38,10 @@ img[alt~='photo'] {
   margin: 1rem 0;
   max-width: 45vh;
   max-width: min(45vh, 100%);
+}
+
+body > p {
+  max-width: 55ch;
 }
 
 article {
@@ -56,10 +61,6 @@ article a {
 }
 
 @media (orientation: portrait) {
-  .desktop-nav {
-    display: none;
-  }
-
   h2 {
     margin-top: 2rem;
   }
