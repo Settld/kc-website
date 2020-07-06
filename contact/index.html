@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Settld</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style/common.css" />
-    <link rel="stylesheet" href="/style/contact.css" />
-  </head>
 
-  <body data-expanded="false">
-    <script>
-      function toggleExpand() {
-        document.body.dataset.expanded =
-          document.body.dataset.expanded === 'true' ? 'false' : 'true'
-      }
-    </script>
-    <div class="mobile-nav" onclick="toggleExpand()">
-      <nav>
-        <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
-        <a href="/media">media</a>
-        <a href="/contact">contact us</a>
-      </nav>
-      <button></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Settld</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style/common.css" />
+  <link rel="stylesheet" href="/style/contact.css" />
+</head>
+
+<body data-expanded="false">
+  <script>
+    function toggleExpand() {
+      document.body.dataset.expanded =
+        document.body.dataset.expanded === 'true' ? 'false' : 'true'
+    }
+  </script>
+  <div class="mobile-nav" onclick="toggleExpand()">
+    <nav>
+      <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
+      <a href="/media/index.html">media</a>
+      <a href="/contact/index.html">contact us</a>
+    </nav>
+    <button></button>
+  </div>
+  <div class="content">
+    <nav class="desktop-nav">
+      <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
+      <a href="/media/index.html">media</a>
+      <a href="/contact/index.html">contact us</a>
+    </nav>
+    <div class="form-wrap">
+      <h2>Get in touch</h2>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: '7929475',
+          formId: '761e84e9-ca9d-4ec4-bcda-0f89e753556d',
+        })
+      </script>
+      <div class="hue"></div>
     </div>
-    <div class="content">
-      <nav class="desktop-nav">
-        <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
-        <a href="/media">media</a>
-        <a href="/contact">contact us</a>
-      </nav>
-      <div class="form-wrap">
-        <h2>Get in touch</h2>
-        <script
-          charset="utf-8"
-          type="text/javascript"
-          src="//js.hsforms.net/forms/shell.js"
-        ></script>
-        <script>
-          hbspt.forms.create({
-            portalId: '7929475',
-            formId: '761e84e9-ca9d-4ec4-bcda-0f89e753556d',
-          })
-        </script>
-        <div class="hue"></div>
-      </div>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
