@@ -31,7 +31,7 @@ h2 {
   background-color: #fff;
 }
 
-.hbspt-form::after {
+/* .hbspt-form::after {
   content: '';
   display: block;
   width: 100%;
@@ -39,6 +39,10 @@ h2 {
   position: relative;
   transform: translateY(-100%);
   background-color: #fff;
+} */
+
+.hs-form-iframe {
+  height: 800px;
 }
 
 .hue {
