@@ -1,79 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-172951621-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-172951621-1");
+    </script>
+    <!-- Google AdSense marker -->
+    <script
+      data-ad-client="ca-pub-3457683240728596"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172951621-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-172951621-1');
-  </script>
-  <!-- Google AdSense marker -->
-  <script data-ad-client="ca-pub-3457683240728596" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settld</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/common.css" />
+    <link rel="stylesheet" href="/style/home.css" />
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Settld</title>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style/common.css" />
-  <link rel="stylesheet" href="/style/home.css" />
-</head>
-
-<body data-expanded="false">
-  <script>
-    function toggleExpand() {
-      document.body.dataset.expanded =
-        document.body.dataset.expanded === 'true' ? 'false' : 'true'
-    }
-  </script>
-  <div class="mobile-nav" onclick="toggleExpand()">
-    <nav>
-      <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
-      <a href="/media/index.html">media</a>
-      <a href="/contact/index.html">contact us</a>
-    </nav>
-    <button></button>
-  </div>
-  <div class="content">
-    <nav class="desktop-nav">
-      <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
-      <a href="/media/index.html">media</a>
-      <a href="/contact/index.html">contact us</a>
-    </nav>
-    <main>
-      <h1>End of <span id="life">life</span> admin made simple</h1>
-      <h2>Launching soon.</h2>
-      <p>
-        When someone dies they leave behind a number of accounts which need to
-        be closed &mdash; utilities, banking, broadband, insurance, the list
-        goes on. Settld was born out of our team's personal experience of
-        loss, and our frustration at spending hours contacting each company
-        and waiting weeks for confirmation of account closure. Launching in
-        July 2020, Settld has one simple goal: cut the bereavement red tape
-        and remove the stress for others, free of charge.
-      </p>
-      <p>
-        Support our
-        <a href="https://www.change.org/BereavementStandard">#BereavementStandard</a>
-        campaign to help us take the complexity out of end of life admin.
-      </p>
-      <a class="cta" href="/contact/index.html">Stay Updated</a>
-    </main>
-    <div class="support">
-      <p>Settld is proud to be sponsored by:</p>
-      <a href="https://www.gov.uk/government/organisations/innovate-uk" target="_blank"><img src="imgs/iuk.png"
-          alt="innovate uk" /></a>
-      <a href="https://www.womblebonddickinson.com/uk" target="_blank"><img src="imgs/wbd.svg"
-          alt="whomble bond dickinson" /></a>
-      <a href="https://een.ec.europa.eu/" target="_blank"><img src="imgs/een.svg" alt="enterprise europe network" /></a>
-      <a href="https://www.gov.uk/government/organisations/innovate-uk" target="_blank"><img src="imgs/iuk.png"
-          alt="innovate uk" /></a>
+  <body data-expanded="false">
+    <script>
+      function toggleExpand() {
+        document.body.dataset.expanded =
+          document.body.dataset.expanded === "true" ? "false" : "true";
+      }
+    </script>
+    <div class="mobile-nav" onclick="toggleExpand()">
+      <nav>
+        <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
+        <a href="/media/index.html">media</a>
+        <a href="/contact/index.html">contact us</a>
+      </nav>
+      <button></button>
     </div>
-  </div>
-  <img src="imgs/illustration.svg" alt="illustration" class="img-main" />
-</body>
-
+    <div class="content">
+      <nav class="desktop-nav">
+        <a href="/"><img src="/imgs/logo.svg" alt="settld logo" /></a>
+        <a href="/media/index.html">media</a>
+        <a href="/contact/index.html">contact us</a>
+      </nav>
+      <main>
+        <h1>End of <span id="life">life</span> admin made simple</h1>
+        <h2>Launching soon.</h2>
+        <p>
+          When someone dies they leave behind a number of accounts which need to
+          be closed &mdash; utilities, banking, broadband, insurance, the list
+          goes on. Settld was born out of our team's personal experience of
+          loss, and our frustration at spending hours contacting each company
+          and waiting weeks for confirmation of account closure. Settld has one
+          simple goal: cut the bereavement red tape and remove the stress for
+          others, free of charge.
+        </p>
+        <p>
+          Support our
+          <a href="https://www.change.org/BereavementStandard"
+            >#BereavementStandard</a
+          >
+          campaign to help us take the complexity out of end of life admin.
+        </p>
+        <a class="cta" href="/contact/index.html">Stay Updated</a>
+      </main>
+      <div class="support">
+        <p>Settld is proud to be sponsored by:</p>
+        <a
+          href="https://www.gov.uk/government/organisations/innovate-uk"
+          target="_blank"
+          ><img src="imgs/iuk.png" alt="innovate uk"
+        /></a>
+        <a href="https://www.womblebonddickinson.com/uk" target="_blank"
+          ><img src="imgs/wbd.svg" alt="whomble bond dickinson"
+        /></a>
+        <a href="https://een.ec.europa.eu/" target="_blank"
+          ><img src="imgs/een.svg" alt="enterprise europe network"
+        /></a>
+        <a
+          href="https://www.gov.uk/government/organisations/innovate-uk"
+          target="_blank"
+          ><img src="imgs/iuk.png" alt="innovate uk"
+        /></a>
+      </div>
+    </div>
+    <img src="imgs/illustration.svg" alt="illustration" class="img-main" />
+  </body>
 </html>
